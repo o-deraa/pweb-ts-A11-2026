@@ -48,7 +48,7 @@ export function ownerName(t: Tiket): string {
   return (t.atasNama || "").trim() || "Tamu";
 }
 
-export const LS = {
+export const LS =   {
   auth: "antrian.auth",
   jenis: "antrian.jenisAntrian",
   tiket: "antrian.tiket",
