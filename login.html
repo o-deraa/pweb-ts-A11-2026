@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masuk - Antrian Rumah Sakit</title>
+  <link rel="stylesheet" href="styles/login.css" />
+  <script src="dist/login.js" type="module" defer></script>
+</head>
+<body>
+  <div class="login-split">
+    <aside class="login-aside">
+      <div class="brand-lg">
+        <span class="brand-mark" aria-hidden="true"><img src="icons8-hospital-64.png" alt="" width="26" height="26" /></span>
+        Antrian Rumah Sakit
+      </div>
+      <div>
+        <h2>Kelola antrian pasien dengan rapi dan terurut.</h2>
+        <p>Masuk sebagai admin atau operator untuk mengatur jenis antrian, menerbitkan tiket, dan memanggil pasien sesuai prioritas.</p>
+        <div class="flow">
+          <div class="flow-step"><span class="n">1</span> Pasien ambil nomor sendiri lewat halaman Ambil Nomor</div>
+          <div class="flow-step"><span class="n">2</span> Operator memanggil sesuai urutan prioritas</div>
+          <div class="flow-step"><span class="n">3</span> Nomor tampil di Layar Antrian</div>
+        </div>
+      </div>
+      <p class="sm" style="color:rgba(255,255,255,.85);margin:0">Layar Antrian dan Ambil Nomor dapat diakses tanpa login.</p>
+    </aside>
+
+    <main class="login-main">
+      <div class="login-card">
+        <h1>Masuk</h1>
+        <p class="helper">Halaman ini untuk mengakses Dashboard Admin dan Panel Operator. Halaman Ambil Nomor tidak memerlukan login.</p>
+        <div id="error" class="alert-error" role="alert"></div>
+        <form id="loginForm">
+          <div class="field-group">
+            <label for="username">Username</label>
+            <input id="username" class="input" type="text" placeholder="emilys" autocomplete="username" required />
+          </div>
+          <div class="field-group">
+            <label for="password">Password</label>
+            <input id="password" class="input" type="password" placeholder="Masukkan password" autocomplete="current-password" required />
+          </div>
+          <button id="submitBtn" class="btn btn-primary block" type="submit">Masuk</button>
+        </form>
+
+        <details class="demo-accounts">
+          <summary>Gunakan akun demo</summary>
+          <p class="demo-label">Akun contoh dari <a href="https://dummyjson.com/users" target="_blank" rel="noopener">dummyjson.com/users</a>, klik untuk mengisi:</p>
+          <button type="button" class="demo-chip" data-user="emilys" data-pass="emilyspass">
+            <span class="av">E</span>
+            <span class="meta"><span class="nm">Emily</span><span class="un">emilys</span></span>
+            <span class="pill vip">admin</span>
+          </button>
+          <button type="button" class="demo-chip" data-user="michaelw" data-pass="michaelwpass">
+            <span class="av">M</span>
+            <span class="meta"><span class="nm">Michael</span><span class="un">michaelw</span></span>
+            <span class="pill vip">admin</span>
+          </button>
+          <button type="button" class="demo-chip" data-user="averyp" data-pass="averyppass">
+            <span class="av">A</span>
+            <span class="meta"><span class="nm">Avery</span><span class="un">averyp</span></span>
+            <span class="pill normal">user</span>
+          </button>
+        </details>
+
+        <p class="foot-note"><a href="ambil-antrian.html">Ambil Nomor</a> &middot; <a href="layar.html">Layar Antrian</a></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
