@@ -5,7 +5,7 @@ import { JenisAntrian, Prioritas, PRIORITAS_LIST, queueColor, AuthSession } from
 import { requireVisitor, logout, paintIdentity } from "./auth.js";
 import { toast } from "./ui.js";
 
-const overlay = document.getElementById("ticketOverlay") as HTMLElement | null;
+const overlay   = document.getElementById("ticketOverlay") as HTMLElement | null;
 const ovNum = document.getElementById("ovNum") as HTMLElement | null;
 const ovName = document.getElementById("ovName") as HTMLElement | null;
 const ovPrio = document.getElementById("ovPrio") as HTMLElement | null;
