@@ -46,7 +46,7 @@ function pad(n: number): string { return String(n).padStart(2, "0"); }
 
 const lastCalled: Record<string, string> = {};
 
-function render(): void {
+function render  (): void {
   const grid = document.getElementById("layarGrid") as HTMLElement;
   const jenis = getJenisAktif();
   grid.innerHTML = jenis.map((j: JenisAntrian) => {
