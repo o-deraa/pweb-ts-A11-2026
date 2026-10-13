@@ -59,7 +59,7 @@ export function requireAuth(): AuthSession | null {
   return a;
 }
 
-export function paintIdentity(a: AuthSession): void {
+export function paintIdentity  (a: AuthSession): void {
   const name = (a.firstName || a.username || "").trim();
   const set = (id: string, value: string): void => {
     const el = document.getElementById(id);
